@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     /* variáveis de cores */
     --color-white: #FFFFFF;
     --color-i-black: #0F0F0F;
@@ -23,4 +23,7 @@
     --font-body2: 18px;
     --font-body3: 16px;
     --font-body4: 14px;
+    --font-alex: 'Alexandria', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+
 }

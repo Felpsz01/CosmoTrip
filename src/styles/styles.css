@@ -1,7 +1,7 @@
 @import url('./global.css');
 
 /* Header */
-.header{
+.header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -12,27 +12,33 @@
 }
 
 
-.header img{
+.header img {
     width: 168px;
     height: 45px;
 }
 
-.header .nav-header ul{
+.header .nav-header ul {
+    width: 362px;
     display: flex;
     gap: 40px;
 }
 
-.header .nav-header ul li{
+.header .nav-header ul li {
     list-style: none;
 }
 
-.header .nav-header ul li a{
+.header .nav-header ul li a {
     text-decoration: none;
     color: var(--color-white);
     cursor: pointer;
     font-size: var(--font-body3);
-    font-weight: normal;
+    font-weight: bold;
     font-family: 'Alexandria', sans-serif;
+}
+
+.header .nav-header ul li a:hover {
+    color: var(--color-pink);
+    transition: 0.3;
 }
 
 .nav-reserve {
@@ -42,6 +48,127 @@
     text-decoration: none;
     color: var(--color-white);
     cursor: pointer;
-    font-weight: var(--font-body3);
+    font-size: var(--font-body3);
     font-family: 'Alexandria', sans-serif;
+    font-weight: bold;
+}
+
+
+/* ================ Main ================ */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 646px;
+    background-color: var(--color-black);
+}
+
+.mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 546px;
+    height: 365px;
+}
+
+main .left .initial {
+    width: 81px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-d-gray);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: var(--font-body4);
+    font-weight: bold;
+    color: var(--color-pink);
+    text-decoration: none;
+    font-family: var(--font-alex);
+}
+
+.initial::before {
+    font-size: 28px;
+    margin-right: 8px;
+    content: "•";
+    color: var(--color-pink);
+
+}
+
+main .left h1 {
+    font-size: var(--font-h1);
+    font-family: var(--font-alex);
+    font-weight: bold;
+    color: var(--color-white);
+    margin-top: 20px;
+}
+
+main .left p {
+    font-size: var(--font-body2);
+    font-family: var(--font-alex);
+    color: var(--color-grey);
+    margin-top: 20px;
+}
+
+main .left nav {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+main .left nav .exp {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 14px 24px;
+    color: var(--color-white);
+    border-radius: 10px;
+    background-color: var(--color-pink);
+    font-size: var(--font-body3);
+    font-family: var(--font-inter);
+    font-weight: normal;
+}
+
+main .left nav .pack {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-alex);
+    align-items: center;
+    border-radius: 10px;
+    border: 1.5px solid var(--color-d-gray);
+    color: var(--color-white);
+    width: 171px;
+    height: 52px;
+}
+
+main .left nav .pack img {
+    width: 24px;
+    height: 24px;
+}
+
+main .right {
+    width: 522px;
+    height: 526px;
+}
+
+/* ================ Section "Brand" ================ */
+
+section .brand{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 185px;
+    background-color: var(--color-i-black);
 }
